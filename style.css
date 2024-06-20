@@ -69,9 +69,15 @@ button:hover {
 .down-btn:hover {
   background-color: #256894; /* Blue color for the up button */
 }
+.toggle-btn:hover {
+  background-color: #d1b30a; /* Yellow color for the toggle button */
+}
 
 ul {
   list-style-type: none;
+  padding: 0;
+}
+ol {
   padding: 0;
 }
 
