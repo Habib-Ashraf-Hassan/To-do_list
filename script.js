@@ -16,6 +16,24 @@ function toggleTask(index) {
   renderTasks();
 }
 
+function shiftTaskUp(index) {
+  if (index > 0) {
+    const temp = tasks[index];
+    tasks[index] = tasks[index - 1];
+    tasks[index - 1] = temp;
+    renderTasks();
+  }
+}
+
+function shiftTaskDown(index) {
+  if (index < tasks.length - 1) {
+    const temp = tasks[index];
+    tasks[index] = tasks[index + 1];
+    tasks[index + 1] = temp;
+    renderTasks();
+  }
+}
+
 function deleteTask(index) {
   tasks.splice(index, 1);
   renderTasks();
@@ -32,15 +50,23 @@ function renderTasks() {
       listItem.classList.add("completed");
     }
 
-    const toggleButton = document.createElement("button");
-    toggleButton.textContent = "Toggle";
-    toggleButton.onclick = () => toggleTask(index);
+    const upButton = document.createElement("button");
+    upButton.textContent = "Up";
+    upButton.classList.add("up-btn"); // Add up button class
+    upButton.onclick = () => shiftTaskUp(index);
+
+    const downButton = document.createElement("button");
+    downButton.textContent = "Down";
+    downButton.classList.add("down-btn"); // Add down button class
+    downButton.onclick = () => shiftTaskDown(index);
 
     const deleteButton = document.createElement("button");
     deleteButton.textContent = "Delete";
+    deleteButton.classList.add("delete-btn"); // Add delete button class
     deleteButton.onclick = () => deleteTask(index);
 
-    listItem.appendChild(toggleButton);
+    listItem.appendChild(upButton);
+    listItem.appendChild(downButton);
     listItem.appendChild(deleteButton);
     taskList.appendChild(listItem);
   });

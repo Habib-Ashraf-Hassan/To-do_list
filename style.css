@@ -27,10 +27,33 @@ input[type="text"] {
 button {
   padding: 8px 16px;
   border: none;
-  background-color: #4caf50;
-  color: #fff;
   border-radius: 5px;
   cursor: pointer;
+  background-color: greenyellow;
+}
+
+.toggle-btn {
+  background-color: #ffd700; /* Yellow color for the toggle button */
+  color: #fff;
+  margin-right: 5px; /* Add right margin */
+  margin-left: 5px; /* Add left margin */
+}
+
+.delete-btn {
+  background-color: #dc3545; /* Red color for the delete button */
+  color: #fff;
+  margin-left: 5px; /* Add left margin */
+}
+.up-btn {
+  background-color: #3498db; /* Blue color for the up button */
+  color: #fff;
+  margin-right: 5px; /* Add right margin */
+}
+
+.down-btn {
+  background-color: #e74c3c; /* Red color for the down button */
+  color: #fff;
+  margin-left: 5px; /* Add left margin */
 }
 
 button:hover {
