@@ -29,7 +29,7 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  background-color: greenyellow;
+  background-color: rgb(77, 214, 36);
 }
 
 .toggle-btn {
@@ -48,16 +48,26 @@ button {
   background-color: #3498db; /* Blue color for the up button */
   color: #fff;
   margin-right: 5px; /* Add right margin */
+  margin-left: 5px; /* Add left margin */
 }
 
 .down-btn {
-  background-color: #e74c3c; /* Red color for the down button */
+  background-color: #3498db; /* Red color for the down button */
   color: #fff;
   margin-left: 5px; /* Add left margin */
 }
 
 button:hover {
   background-color: #45a049;
+}
+.delete-btn:hover {
+  background-color: #aa1e2c; /* Red color for the delete button */
+}
+.up-btn:hover {
+  background-color: #256894; /* Blue color for the up button */
+}
+.down-btn:hover {
+  background-color: #256894; /* Blue color for the up button */
 }
 
 ul {
@@ -66,7 +76,8 @@ ul {
 }
 
 li {
-  margin-bottom: 5px;
+  margin: 10px;
+  padding: 10px;
 }
 
 .completed {

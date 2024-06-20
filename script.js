@@ -51,22 +51,28 @@ function renderTasks() {
     }
 
     const upButton = document.createElement("button");
-    upButton.textContent = "Up";
+    upButton.textContent = "⬆️";
     upButton.classList.add("up-btn"); // Add up button class
     upButton.onclick = () => shiftTaskUp(index);
 
     const downButton = document.createElement("button");
-    downButton.textContent = "Down";
+    downButton.textContent = "⬇️";
     downButton.classList.add("down-btn"); // Add down button class
     downButton.onclick = () => shiftTaskDown(index);
 
+    const toggleButton = document.createElement("button");
+    toggleButton.textContent = "Toggle";
+    toggleButton.classList.add("toggle-btn"); // Add toggle button class
+    toggleButton.onclick = () => toggleTask(index);
+
     const deleteButton = document.createElement("button");
-    deleteButton.textContent = "Delete";
+    deleteButton.textContent = "🗑️";
     deleteButton.classList.add("delete-btn"); // Add delete button class
     deleteButton.onclick = () => deleteTask(index);
 
     listItem.appendChild(upButton);
     listItem.appendChild(downButton);
+    listItem.appendChild(toggleButton);
     listItem.appendChild(deleteButton);
     taskList.appendChild(listItem);
   });
