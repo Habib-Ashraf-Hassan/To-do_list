@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List App</title>
+    <link rel="icon" href="my-icon.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>To-Do List</h1>
+      <input type="text" id="taskInput" placeholder="Add a new task" />
+      <button onclick="addTask()">Add Task</button>
+      <ol id="taskList"></ol>
+    </div>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyCKi-xjsV5DKbTW2UaEjj8wQBeFnriMl-s",
+        authDomain: "to-list-app-59fcf.firebaseapp.com",
+        projectId: "to-list-app-59fcf",
+        storageBucket: "to-list-app-59fcf.appspot.com",
+        messagingSenderId: "408265303713",
+        appId: "1:408265303713:web:007ea05dec7de944ec72e0",
+        measurementId: "G-CSVE2EPSLP",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

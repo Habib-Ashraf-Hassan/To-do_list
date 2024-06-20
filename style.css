@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(77, 214, 36);
+}
+
+.toggle-btn {
+  background-color: #ffd700; /* Yellow color for the toggle button */
+  color: #fff;
+  margin-right: 5px; /* Add right margin */
+  margin-left: 5px; /* Add left margin */
+}
+
+.delete-btn {
+  background-color: #dc3545; /* Red color for the delete button */
+  color: #fff;
+  margin-left: 5px; /* Add left margin */
+}
+.up-btn {
+  background-color: #3498db; /* Blue color for the up button */
+  color: #fff;
+  margin-right: 5px; /* Add right margin */
+  margin-left: 5px; /* Add left margin */
+}
+
+.down-btn {
+  background-color: #3498db; /* Red color for the down button */
+  color: #fff;
+  margin-left: 5px; /* Add left margin */
+}
+
+button:hover {
+  background-color: #45a049;
+}
+.delete-btn:hover {
+  background-color: #aa1e2c; /* Red color for the delete button */
+}
+.up-btn:hover {
+  background-color: #256894; /* Blue color for the up button */
+}
+.down-btn:hover {
+  background-color: #256894; /* Blue color for the up button */
+}
+.toggle-btn:hover {
+  background-color: #d1b30a; /* Yellow color for the toggle button */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+ol {
+  padding: 0;
+}
+
+li {
+  margin: 10px;
+  padding: 10px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
